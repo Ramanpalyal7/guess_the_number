@@ -24,7 +24,7 @@ nav {
   width: 230px;
   height: 85px;
   font-size: 48px;
-  border: 1.5px solid rgb(0, 0, 0);
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
   font-weight: 500;
   border-radius: 60px;
   color: #222222;
@@ -34,6 +34,7 @@ nav {
 .range {
   font-size: 34px;
   color: whitesmoke;
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }
 
 /* ----------------------Center Div------------------- */
@@ -49,6 +50,7 @@ nav {
 .text {
   color: whitesmoke;
   font-size: 55px;
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }
 .number {
   width: 230px;
@@ -57,6 +59,7 @@ nav {
   margin-top: 28px;
   border-radius: 60px;
   filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
   padding: 12px;
   font-size: 52px;
   color: whitesmoke;
@@ -94,11 +97,12 @@ nav {
   font-size: 48px;
   text-align: center;
   margin-bottom: 12px;
-  border: 1.5px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.311);
   border-radius: 2px;
   color: #222222;
   background-color: whitesmoke;
   filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }
 .check {
   width: 160px;
@@ -130,11 +134,14 @@ nav {
 .guessing {
   font-size: 38px;
   margin-bottom: 20px;
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }
 .label-score {
   font-size: 35px;
   margin-bottom: 20px;
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }
 .label-highscore {
   font-size: 32px;
+  text-shadow: 2px 3px 6px rgb(80, 80, 80, 0.7);
 }

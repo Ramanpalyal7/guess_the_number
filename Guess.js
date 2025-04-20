@@ -26,33 +26,44 @@ document.querySelector(".check").addEventListener("click", function () {
     score--;
     document.querySelector(".score").textContent = score;
   }
-
-  // When guess is higher
-  //
-  else if (guess > secretNumber) {
-    //
+  // Re-factoring -DRY principle
+  else if (guess != secretNumber) {
     if (score > 1) {
-      document.querySelector(".guessing").textContent = " High Value ";
-      score--;
-      document.querySelector(".score").textContent = score;
-    }
-    //
-    else {
-      document.querySelector(".guessing").textContent = " 😭You Lost The Game";
-    }
-  }
-
-  // When guess is low
-  //
-  else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector(".guessing").textContent = " Low Value";
+      document.querySelector(".guessing").textContent =
+        guess > secretNumber ? "High Value" : "Low Value";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".guessing").textContent = "😭You Lost The Game";
+      document.querySelector(".guessing").textContent = " 😭You Lost The Game";
+      document.querySelector(".score").textContent = 0;
     }
   }
+  // // When guess is higher
+  // //
+  // else if (guess > secretNumber) {
+  //   //
+  //   if (score > 1) {
+  //     document.querySelector(".guessing").textContent = " High Value ";
+  //     score--;
+  //     document.querySelector(".score").textContent = score;
+  //   }
+  //   //
+  //   else {
+  //     document.querySelector(".guessing").textContent = " 😭You Lost The Game";
+  //   }
+  // }
+
+  // // When guess is low
+  // //
+  // else if (guess < secretNumber) {
+  //   if (score > 1) {
+  //     document.querySelector(".guessing").textContent = " Low Value";
+  //     score--;
+  //     document.querySelector(".score").textContent = score;
+  //   } else {
+  //     document.querySelector(".guessing").textContent = "😭You Lost The Game";
+  //   }
+  // }
   // When guess is equal to secret number
   else if (guess === secretNumber) {
     document.querySelector(".guessing").textContent = " 🎉You Won The Game .";
@@ -105,6 +116,6 @@ button.addEventListener("mouseenter", function () {
 });
 button.addEventListener("mouseleave", function () {
   button.style.width = "160px";
-  button.style.filter = "drop-shadow(2px 2px 4px rgb(128, 0, 255,0.8)";
+  // button.style.filter = "drop-shadow(2px 2px 4px rgb(128, 0, 255,0.8)";
   button.style.backgroundColor = "whitesmoke";
 });
