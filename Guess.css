@@ -57,7 +57,7 @@ nav {
   margin-top: 28px;
   border-radius: 60px;
   filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
-  padding: 9px;
+  padding: 12px;
   font-size: 52px;
   color: whitesmoke;
   text-align: center;
@@ -88,7 +88,7 @@ nav {
   align-items: center;
   border: 2px solid white;
 }
-#guess-number {
+.guess {
   width: 250px;
   height: 95px;
   margin-top: 12px;
