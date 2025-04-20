@@ -80,7 +80,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".again").style.backgroundColor = "rgb(128, 0, 255)";
   document.querySelector(".again").style.filter =
     "drop-shadow(1px 1px 4px rgba(125,125,125,0.8)";
-  document.querySelector(".again").style.color = "whitesmoke";
 });
 
 // hover on again button
