@@ -86,7 +86,6 @@ nav {
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  border: 2px solid white;
 }
 .guess {
   width: 250px;
@@ -116,7 +115,7 @@ nav {
 .text-container {
   min-width: 35%;
   height: 250px;
-  border: 2px solid white;
+
   color: whitesmoke;
   display: flex;
   flex-direction: column;
