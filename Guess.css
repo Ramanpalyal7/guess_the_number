@@ -1,5 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #222222;
+}
+/* ------------------Navigation bar-------------------------------- */
+
+nav {
+  min-height: 100px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.again {
+  width: 230px;
+  height: 85px;
+  font-size: 48px;
+  border: 1.5px solid rgb(0, 0, 0);
+  font-weight: 500;
+  border-radius: 60px;
+  color: #222222;
+  background-color: whitesmoke;
+  filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+}
+.range {
+  font-size: 34px;
+  color: whitesmoke;
+}
+
+/* ----------------------Center Div------------------- */
+.center {
+  min-height: 280px;
+  width: 100%;
+
+  display: inline-block;
+
+  justify-items: center;
+  padding: 20px;
+}
+.text {
+  color: whitesmoke;
+  font-size: 55px;
+}
+.number {
+  width: 230px;
+  height: 100px;
+  border: 2px solid white;
+  margin-top: 28px;
+  border-radius: 60px;
+  filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+  padding: 9px;
+  font-size: 52px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* ------------------------------Last Grid container----------------------- */
+.last-container {
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  grid-template-areas: "A B";
+  align-items: center;
+  justify-content: top;
+  align-content: center;
+}
+.container {
+  grid-area: A;
+}
+.text-container {
+  grid-area: B;
+}
+/* -------------------------Left Container----------------------- */
+.container {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+#guess-number {
+  width: 250px;
+  height: 95px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 12px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 2px;
+  color: #222222;
+  background-color: whitesmoke;
+  filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+}
+.check {
+  width: 160px;
+  height: 60px;
+  font-size: 32px;
+  margin-top: 23px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  color: #222222;
+  background-color: whitesmoke;
+  filter: drop-shadow(1px 1px 4px rgb(125, 125, 125, 0.8));
+}
+/* ------------------------------------Right Container--------------------------- */
+.text-container {
+  min-width: 35%;
+  height: 250px;
+
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  /* text-align: center; */
+  align-items: center;
+}
+.inside {
+  /* height: 120px; */
+  width: 50%;
+}
+.guessing {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.label-score {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.label-highscore {
+  font-size: 32px;
 }

@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="./Guess.css" />
   </head>
   <body>
+    <!---------------------- Navigation bar---------------------------- -->
+    <nav>
+      <button class="btn again">Again !</button>
+      <p class="range">{Between 1 and 20 }</p>
+    </nav>
+    <!-- --------------------Center Div--------------------------------- -->
+    <div class="center">
+      <h1 class="text">Guess The Number !</h1>
+      <p class="number">?</p>
+    </div>
+
+    <!--------------------------Last Grid Container----------------- -->
+    <section class="last-container">
+      <div class="container">
+        <input type="number" name="check" id="guess-number" />
+        <button class="check">Check !</button>
+      </div>
+      <div class="text-container">
+        <div class="inside">
+          <h4 class="guessing">Start guessing..</h4>
+          <p class="label-score">💯 Score : <span class="score"> 0</span></p>
+          <p class="label-highscore">
+            🎖️ Highscore : <span class="highscore"> 0</span>
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="./Guess.js"></script>
   </body>
 </html>
