@@ -89,11 +89,17 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guessing").textContent = "Start guessing..";
   document.querySelector(".again").style.backgroundColor = "rgb(128, 0, 255)";
+  // I want to change the background color of body after Again click
+  document.querySelector("body").style.backgroundColor = " #222222";
+  document.querySelector(".number").style.backgroundColor = " #222222";
+  document.querySelector(".score").style.backgroundColor = " #222222";
   document.querySelector(".again").style.filter =
     "drop-shadow(1px 1px 4px rgba(125,125,125,0.8)";
 });
 
+//
 // hover on again button
+//
 const btn = document.querySelector(".again");
 btn.addEventListener("mouseenter", function () {
   btn.style.width = "239px";
@@ -104,10 +110,15 @@ btn.addEventListener("mouseenter", function () {
 btn.addEventListener("mouseleave", function () {
   btn.style.width = "238px";
   btn.style.backgroundColor = "rgb(255, 255, 255)";
-  button.style.filter = "drop-shadow(2px 2px 4px rgb(128, 0, 255,0.8)";
+  button.style.filter = "drop-shadow(1px 1px 2px rgb(128, 0, 255,0.6)";
 });
 
+//Check button
+document.querySelector(".check").style.filter =
+  "drop-shadow(1px 1px 2px rgb(128, 0, 255,0.6)";
+
 // hover on check button
+//
 const button = document.querySelector(".check");
 button.addEventListener("mouseenter", function () {
   button.style.width = "162px";
@@ -116,6 +127,7 @@ button.addEventListener("mouseenter", function () {
 });
 button.addEventListener("mouseleave", function () {
   button.style.width = "160px";
+
   // button.style.filter = "drop-shadow(2px 2px 4px rgb(128, 0, 255,0.8)";
   button.style.backgroundColor = "whitesmoke";
 });
